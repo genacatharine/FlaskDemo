@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <title>My Hiking Journal</title>
+  <!-- Personal CSS -->
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <!-- Bootstrap CSS cdn -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!--Personal Javascript-->
+  <script src="js/Q1myjs.js"></script>
+  <!-- Google fonts -->
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+  </style>
+  <!-- Mobile friendly -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<!-- Navigation bar -->
+<body>
+  <header>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">My Hiking Journal</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#tohikelist"> My To-Hike List</a></li>
+          <!-- <li><a href="#blog">My Hiking Blog</a></li> -->
+        </ul>
+      </div>
+    </nav>
+  </header>
+<!-- First Parallax Section -->
+  <main class="bkimg container-fluid">
+    <div class="d-flex justify-content-center">
+      <div class="row mt-5">
+        <div class="text-center">
+          <h1> MY HIKING JOURNAL</h1>
+            <h5>Create your very own hiking diary! <br> Find hiking trails, check the weather, add them to your To-Hike list, upload photos and blog about them!</h5>
+
+          <form id="foo">
+            <div class="col s12 m12">
+              <label for="address" style="text-align: center">Enter Your Location to Start Your Journey...</label><br>
+                <input id="address" name="address" required>
+                <input type="submit" name="add_tag" value="Submit" id="pleasework">
+            </div><br>
+          </form>
+          <!-- Search results list -->
+                    <div class="results-area">
+                      <div class="hidden">5 Nearby Hikes</div>
+                      <ol class="results">
+                      </ol>
+                    </div>
+                    <!-- End results list -->
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Second Parallax Section -->
+ <div class="paralsec2">
+    <a name="tohikelist"></a>
+       <h1 id="MyToHike">My To-Hike List</h1>
+         <ul id="todo">
+           <li id="listitem"></li>
+         </ul>
+       <h2><a href="index.html">Home</a></h2>
+ </div>
+ <!-- JQuery -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+ </script>
+ <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+  <footer class="footer">
+        <div class="container-fluid">
+          <span style="color: white">&copy 2017 <a href="https://www.linkedin.com/in/gena-israel-493393108/" target="_blank">Gena Israel</span>
+        </div>
+  </footer>
+
+</html>
